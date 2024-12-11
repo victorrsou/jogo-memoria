@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 30px 0;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.card img {
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.card.facedown img {
+    transform: rotateY(180deg);
+}
+
+.pontuacao-final {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.points {
+    color: red;
+    font-size: 50px;
+    font-weight: bold;
+}
